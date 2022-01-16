@@ -1,0 +1,29 @@
+# `sheldon` configuration file
+# ----------------------------
+
+shell = "zsh"
+
+[templates]
+defer = { value = 'zsh-defer source "{{ file }}"', each = true }
+
+[plugins]
+
+[plugins.zsh-defer]
+github = "romkatv/zsh-defer"
+
+[plugins.oh-my-zsh]
+github = "ohmyzsh/ohmyzsh"
+apply = ["defer"]
+
+[plugins.zsh-autosuggestions]
+github = "zsh-users/zsh-autosuggestions"
+use = ["{{ name }}.zsh"]
+apply = ["defer"]
+
+
+[plugins.zsh-syntax-highlighting]
+github = "zsh-users/zsh-syntax-highlighting"
+apply = ["defer"]
+
+[plugins.base16]
+github = "chriskempson/base16-shell"
