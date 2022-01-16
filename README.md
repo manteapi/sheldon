@@ -1,2 +1,2 @@
-# sheldon
-Sheldon configuration file
+# Sheldon
+Sheldon configuration
