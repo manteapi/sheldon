@@ -11,10 +11,6 @@ defer = { value = 'zsh-defer source "{{ file }}"', each = true }
 [plugins.zsh-defer]
 github = "romkatv/zsh-defer"
 
-[plugins.oh-my-zsh]
-github = "ohmyzsh/ohmyzsh"
-apply = ["defer"]
-
 [plugins.zsh-autosuggestions]
 github = "zsh-users/zsh-autosuggestions"
 use = ["{{ name }}.zsh"]
